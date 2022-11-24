@@ -1,0 +1,28 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>database</title>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th>email</th>
+        <th>password</th>
+        <th>firstname</th>
+        <th>lastname</th>
+        <th>createat</th>
+        <th>updateat</th>
+      </tr>
+      <%= for(let i = 0; i < data.length; i++) { %>
+      <tr>
+        <td><%= data[i].email %></td>
+        <td><%= data[i].password %></td>
+        <td><%= data[i].firstname %></td>
+        <td><%= data[i].lastname %></td>
+      </tr>
+      <% = }%>
+    </table>
+  </body>
+</html>
